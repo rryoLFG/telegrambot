@@ -1,0 +1,3 @@
+fx_data = requests.get(fx_url, params=fx_params).json()
+print(fx_data)  # ←追加：内容を確認
+usd_jpy = fx_data['rates']['JPY']
